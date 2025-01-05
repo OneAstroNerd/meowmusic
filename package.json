@@ -1,0 +1,32 @@
+{
+  "name": "meowmusic",
+  "version": "1.0.0",
+  "description": "one minimal desktop music player",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneAstroNerd/meowmusic.git"
+  },
+  "keywords": [
+    "\"music",
+    "player\"",
+    "music",
+    "player",
+    "javascript",
+    "electron",
+    "desktop"
+  ],
+  "author": "Yasser Hossein zadeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OneAstroNerd/meowmusic/issues"
+  },
+  "homepage": "https://github.com/OneAstroNerd/meowmusic#readme",
+  "devDependencies": {
+    "electron": "^33.2.1"
+  }
+}
