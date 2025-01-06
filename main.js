@@ -1,13 +1,15 @@
-const { app, BrowserWindow, nativeImage } = require('electron/main')
+const { app, BrowserWindow, nativeImage, remote } = require('electron/main')
 
 const createWindow = () => {
   const win = new BrowserWindow({
+    backgroundMaterial: "none",
     icon: "assets\\icon.ico",
     width: 800,
     height: 600,
-    frame: false,
-    backgroundMaterial: "acrylic",
-    backgroundColor: "rgba(0, 0, 0, 0.50)"
+    // frame: false,
+    autoHideMenuBar: true,
+    resizable: false,
+    // opacity:90
   })
 
   win.setOverlayIcon(nativeImage.createFromPath('assets\\icon.ico'), 'Moew Player')

@@ -1,5 +1,7 @@
 body {
+    overflow-y:hidden;
     color: whitesmoke;
+    background-color: rgba(20, 20, 20);
     font-family: doto;
     padding: 5px 4px 5px 4px
 }
@@ -8,9 +10,40 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     padding: 7px 10px 7px 10px;
     border-radius: 7px;
+    margin-bottom: 10px;
 }
 
 #title > * {
     padding: 0 0 0 0 ;
     margin: 0 0 0 0;
+}
+
+#Playlist {
+    overflow-y:scroll;
+    overflow-x:hidden;
+    height:400px;
+    --sb-track-color:  rgba(255, 255, 255, 0.05);
+    --sb-thumb-color: #ababab;
+    --sb-size: 10px;
+}
+
+#Playlist::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+#Playlist::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 4px;
+}
+
+#Playlist::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 4px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    #Playlist {
+    scrollbar-color: var(--sb-thumb-color)
+                    var(--sb-track-color);
+}
 }
